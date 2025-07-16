@@ -71,6 +71,16 @@ func (c *Client) SendEmbedWithFile(embed DiscordEmbed, filename string) error {
 	return c.sendPayload(payload, filename)
 }
 
+// SendEmbedWithFile envoie un embed avec un fichier
+func (c *Client) SendFile(filename string) error {
+	payload := DiscordPayload{
+		Username: c.Options.Username,
+		Avatar:   c.Options.Avatar,
+	}
+
+	return c.sendPayload(payload, filename)
+}
+
 // SendCustomPayload envoie un payload personnalisé
 func (c *Client) SendCustomPayload(payload DiscordPayload) error {
 	return c.sendPayload(payload, "")

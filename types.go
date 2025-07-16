@@ -12,6 +12,8 @@ type DiscordEmbed struct {
 	Fields      []EmbedField      `json:"fields,omitempty"`
 	Footer      *EmbedFooter      `json:"footer,omitempty"`
 	Timestamp   string            `json:"timestamp,omitempty"`
+	Thumbnail   map[string]string `json:"thumbnail,omitempty"`
+	Author      EmbedAuthor       `json:"author,omitempty"`
 }
 
 // EmbedField représente un champ d'embed
@@ -19,6 +21,12 @@ type EmbedField struct {
 	Name   string `json:"name"`
 	Value  string `json:"value"`
 	Inline bool   `json:"inline,omitempty"`
+}
+
+type EmbedAuthor struct {
+	Name    string `json:"name"`
+	URL     string `json:"url"`
+	IconURL string `json:"icon_url,omitempty"`
 }
 
 // EmbedFooter représente le footer d'un embed
