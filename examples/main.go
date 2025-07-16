@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	discordwebhook "github.com/peespii/discord-webhook-go"
+	discordwebhook "github.com/peepsii/discord-webhook-go"
 )
 
 func main() {
