@@ -20,4 +20,8 @@ A simple, efficient and complete Go library for sending Discord webhooks with su
 ## Installation
 
 ```bash
-go get github.com/VOTRE-USERNAME/discord-webhook-go
+go get github.com/peepsii/discord-webhook-go
+```
+
+## Examples
+- See https://github.com/peepsii/discord-webhook-go/blob/main/examples/main.go for a full demonstration.
